@@ -1,4 +1,4 @@
-name: Notify clones
+name: Notify Clones
 
 on:
   pull_request:
@@ -22,4 +22,4 @@ jobs:
         with:
           token: ${{secrets.GH_TOKEN}}
           repository: ${{ matrix.repo }}
-          event-type: template_updated
+          event-type: template_repo_updated
