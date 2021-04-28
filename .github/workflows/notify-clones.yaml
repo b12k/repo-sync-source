@@ -12,7 +12,9 @@ jobs:
     if: github.event.pull_request.merged == true
     strategy:
       matrix:
-        repo: ['b12k/repo-sync-dest-1']
+        repo:
+          # List of repos to notify
+          - b12k/repo-sync-dest-1
     runs-on: ubuntu-latest
     steps:
       - name: Notify clones
