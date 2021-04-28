@@ -14,7 +14,7 @@ jobs:
       matrix:
         repo:
           # List of repos to notify
-          - b12k/repo-sync-dest-1
+          - b12k/repo-sync-dest
     runs-on: ubuntu-latest
     steps:
       - name: Notify clones
